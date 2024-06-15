@@ -79,3 +79,28 @@ h1 {
 .back-button:hover {
     background-color: #005bb5;
 }
+
+/* Update for carousel arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+}
+
+.carousel-control-prev-icon::after {
+    mask-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" fill="%23fff"><path d="M0 4l4-4v3h4v2h-4v3z" /></svg>');
+}
+
+.carousel-control-next-icon::after {
+    mask-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" fill="%23fff"><path d="M8 4l-4 4v-3h-4v-2h4v-3z" /></svg>');
+}
