@@ -2,14 +2,6 @@
 
 <div style="text-align: right"><b>팀 에구구구</b></div>
 
-[![since](https://github.com/jjj5306/CountryForOldMan/assets/74577707/d8bbcec9-77c0-4afd-90bf-a5321d1dec18)](https://github.com/jjj5306/CountryForOldMan)
-[![dong](https://github.com/jjj5306/CountryForOldMan/assets/74577707/2cb1c1de-30dd-4799-ab90-4ec497559c45)](https://github.com/dwoo32)
-[![hyun](https://github.com/jjj5306/CountryForOldMan/assets/74577707/afe7f4d7-25d3-422c-a5f8-017c5e69d6b5)](https://github.com/boxty123)
-[![jo](https://github.com/jjj5306/CountryForOldMan/assets/74577707/a3e3bd12-19e5-4e1d-afd0-68f060f5ac90)
-](https://github.com/jjj5306)
-[![tae](https://github.com/jjj5306/CountryForOldMan/assets/74577707/10ca4088-e0d2-4d79-ab54-7e12e1233803)
-](https://github.com/Taehw)
-
 ---
 
 ### [Docs](/docs/README.md)
