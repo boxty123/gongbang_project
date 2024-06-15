@@ -1,6 +1,6 @@
-# 노인을 위한 세상은 있다.
+# Project : 공방
 
-<div style="text-align: right"><b>팀 에구구구</b></div>
+<div style="text-align: right"><b>팀 Won Room</b></div>
 
 ---
 
