@@ -20,7 +20,7 @@
                     <a class="nav-link" href="./main.html">홈</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./review.html">리뷰</a>
+                    <a class="nav-link" href="./t_review.html">리뷰</a>
                 </li>
             </ul>
         </div>
@@ -33,7 +33,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center">
-                        <img src="./img/room/hyun/room1-main_img.avif" alt="방 3" class="d-block w-50">
+                        <img src="./img/room/hyun/room1-main_img.avif" alt="방 3" class="d-block w-50" data-toggle="modal" data-target="#roomModal">
                         <div class="info ml-4">
                             <h2>방 3</h2>
                             <p>가격: 3억원</p>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex justify-content-center">
-                        <img src="./img/room/hyun/room1-main_img.avif" alt="방 4" class="d-block w-50">
+                        <img src="./img/room/hyun/room1-main_img.avif" alt="방 4" class="d-block w-50" data-toggle="modal" data-target="#roomModal">
                         <div class="info ml-4">
                             <h2>방 4</h2>
                             <p>가격: 4억원</p>
@@ -51,36 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <img src="./img/room/hyun/room1-main_img.avif" alt="방 5" class="d-block w-50">
-                        <div class="info ml-4">
-                            <h2>방 5</h2>
-                            <p>가격: 5억원</p>
-                            <p>위치: 서울시 강남구</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <img src="./img/room/hyun/room1-main_img.avif" alt="방 6" class="d-block w-50">
-                        <div class="info ml-4">
-                            <h2>방 6</h2>
-                            <p>가격: 6억원</p>
-                            <p>위치: 서울시 서초구</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <img src="./img/room/hyun/room1-main_img.avif" alt="방 7" class="d-block w-50">
-                        <div class="info ml-4">
-                            <h2>방 7</h2>
-                            <p>가격: 7억원</p>
-                            <p>위치: 서울시 마포구</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- 추가 방 목록... -->
             </div>
             <a class="carousel-control-prev" href="#propertyCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -91,7 +62,29 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <a href="./main.html" class="btn btn-primary mt-3">목록으로 돌아가기</a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="roomModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">방 상세 정보</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/room/hyun/room1-main_img.avif" alt="방 이미지" class="img-fluid">
+                    <img src="./img/room/hyun/room1-main_img.avif" alt="방 이미지" class="img-fluid">
+                    <img src="./img/room/hyun/room1-main_img.avif" alt="방 이미지" class="img-fluid">
+                    <p>추가적인 방 정보를 여기에 표시합니다.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
