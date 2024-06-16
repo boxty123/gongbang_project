@@ -12,6 +12,11 @@ body {
 }
 
 .container {
+    font-family: "Dongle", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    
     text-align: center;
     width: 80%;
     max-width: 1200px;

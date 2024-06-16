@@ -5,6 +5,13 @@ body {
     background-size: cover;
 }
 .container {
+    
+    /* 폰트 지정 */
+    font-family: "Dongle", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
@@ -47,15 +54,21 @@ body {
     margin-top: 20px;
 }
 .info h2 {
-    font-size: 20px;
+    font-size: 40px;
     color: #333333;
     margin-bottom: 10px;
 }
 .info p {
-    font-size: 16px;
+    font-size: 40px;
     color: #777777;
     margin: 5px 0;
 }
+
+u, a{
+    text-decoration: none;
+}
+
+
 #first_box_img {
     text-align: center;
     margin: 20px 0;
