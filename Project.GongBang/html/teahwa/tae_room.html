@@ -6,6 +6,9 @@
     <title>김태화님의 방 목록</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Project.GongBang/css/agent.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
 </head>
 <body>
    
@@ -76,7 +79,7 @@
                 </div>
                 <div class="modal-body">
                     <div id="modalImages" class="d-flex flex-wrap"></div>
-                    <p id="modalDescription">010-xxxx-xxxx</p>
+                    <p id="modalDescription">방 상세 정보</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
@@ -88,45 +91,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        const roomData = {
-            1: {
-                images: [
-                    '/Project.GongBang/img/room/tae_room/room1-1.png',
-                    '/Project.GongBang/img/room/tae_room/room1-2.png',
-                    '/Project.GongBang/img/room/tae_room/room1-3.png'
-                ],
-                description: '방 1의 상세 정보입니다.'
-            },
-            2: {
-                images: [
-                    '/Project.GongBang/img/room/tae_room/room2-1.png',
-                    '/Project.GongBang/img/room/tae_room/room2-2.png',
-                    '/Project.GongBang/img/room/tae_room/room2-3.png'
-                ],
-                description: '방 2의 상세 정보입니다.'
-            }
-        };
-
-        $('#roomModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget); 
-            var room = button.data('room'); 
-
-            var modal = $(this);
-            var modalImages = modal.find('#modalImages');
-            var modalDescription = modal.find('#modalDescription');
-
-            var data = roomData[room];
-
-            modalImages.empty(); 
-
-            data.images.forEach(function(src) {
-                var img = $('<img>').attr('src', src).addClass('img-fluid m-1').css('width', '99%');
-                modalImages.append(img);
-            });
-
-            modalDescription.text(data.description);
-        });
-    </script>
+    <script src="/Project.GongBang/js/teahwa.js"></script>
 </body>
 </html>

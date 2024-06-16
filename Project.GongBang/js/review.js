@@ -49,7 +49,7 @@ function addReviewModal(review) {
         modalAgent.textContent = `중개사: ${review.agent}`;
     });
 }
-
+localStorage.clear();
 // 로컬 저장소에서 리뷰 불러오기
 function loadReviews() {
     const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
