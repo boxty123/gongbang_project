@@ -20,7 +20,7 @@
                     <a class="nav-link" href="/Project.GongBang/html/main.html">홈</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./t_review.html">리뷰</a>
+                    <a class="nav-link" href="/Project.GongBang/html/review.html">리뷰</a>
                 </li>
             </ul>
         </div>
@@ -33,7 +33,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center">
-                        <img src="/Project.GongBang/img/room/hyun/room1-main_img.avif" alt="방 1" data-toggle="modal" data-target="#roomModal" data-room="1">
+                        <img src="/Project.GongBang/img/room/hyun/room1.png" alt="방 1" data-toggle="modal" data-target="#roomModal" data-room="1">
                         <div class="room-text">
                             <h2>방 3</h2>
                             <p>가격: 3억원</p>
@@ -92,9 +92,9 @@
         const roomData = {
             1: {
                 images: [
-                    '/Project.GongBang/img/room/hyun/room1-main_img.avif',
-                    '/Project.GongBang/img/room/hyun/room1-img2.avif',
-                    '/Project.GongBang/img/room/hyun/room1-img3.avif'
+                    '/Project.GongBang/img/room/hyun/room1-1.png',
+                    '/Project.GongBang/img/room/hyun/room1-2.png',
+                    '/Project.GongBang/img/room/hyun/room1-3.png'
                 ],
                 description: '방 3의 상세 정보입니다.'
             },
@@ -106,7 +106,6 @@
                 ],
                 description: '방 4의 상세 정보입니다.'
             }
-            // 추가 방 데이터...
         };
 
         $('#roomModal').on('show.bs.modal', function (event) {
@@ -122,7 +121,7 @@
             modalImages.empty(); // 이전 이미지 제거
 
             data.images.forEach(function(src) {
-                var img = $('<img>').attr('src', src).addClass('img-fluid m-1').css('width', '30%');
+                var img = $('<img>').attr('src', src).addClass('img-fluid m-1').css('width', '99%');
                 modalImages.append(img);
             });
 

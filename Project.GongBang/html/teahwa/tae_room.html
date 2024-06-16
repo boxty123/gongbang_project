@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공인중개사 2의 방 목록</title>
+    <title>김태화님의 방 목록</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/agent.css">
+    <link rel="stylesheet" href="/Project.GongBang/css/agent.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">공인중개사 2</a>
+        <a class="navbar-brand" href="#">김태화</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="./main.html">홈</a>
+                    <a class="nav-link" href="/Project.GongBang/html/main.html">홈</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./t_review.html">리뷰</a>
+                    <a class="nav-link" href="/Project.GongBang/html/review.html">리뷰</a>
                 </li>
             </ul>
         </div>
@@ -28,83 +28,36 @@
 
     <!-- Main Content -->
     <div class="container mt-5">
-        <h1>공인중개사 2의 방 목록</h1>
+        <h1>김태화님의 방 목록</h1>
         <div id="propertyCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="d-flex justify-content-center flex-column align-items-center">
-                                <img src="./img/room/hyun/room1-main_img.avif" alt="방 3" class="d-block w-100 rounded-img">
-                                <div class="info text-center mt-3">
-                                    <h2>방 3</h2>
-                                    <p>가격: 3억원</p>
-                                    <p>위치: 서울시 용산구</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex justify-content-center flex-column align-items-center">
-                                <img src="./img/room/hyun/room1-main_img.avif" alt="방 4" class="d-block w-100 rounded-img">
-                                <div class="info text-center mt-3">
-                                    <h2>방 4</h2>
-                                    <p>가격: 4억원</p>
-                                    <p>위치: 서울시 종로구</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex justify-content-center flex-column align-items-center">
-                                <img src="./img/room/hyun/room1-main_img.avif" alt="방 5" class="d-block w-100 rounded-img">
-                                <div class="info text-center mt-3">
-                                    <h2>방 5</h2>
-                                    <p>가격: 5억원</p>
-                                    <p>위치: 서울시 강남구</p>
-                                </div>
-                            </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="/Project.GongBang/img/room/hyun/room1-main_img.avif" alt="방 1" data-toggle="modal" data-target="#roomModal" data-room="1">
+                        <div class="room-text">
+                            <h2>방 3</h2>
+                            <p>가격: 3억원</p>
+                            <p>위치: 서울시 용산구</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="d-flex justify-content-center flex-column align-items-center">
-                                <img src="./img/room/hyun/room1-main_img.avif" alt="방 6" class="d-block w-100 rounded-img">
-                                <div class="info text-center mt-3">
-                                    <h2>방 6</h2>
-                                    <p>가격: 6억원</p>
-                                    <p>위치: 서울시 서초구</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex justify-content-center flex-column align-items-center">
-                                <img src="./img/room/hyun/room1-main_img.avif" alt="방 7" class="d-block w-100 rounded-img">
-                                <div class="info text-center mt-3">
-                                    <h2>방 7</h2>
-                                    <p>가격: 7억원</p>
-                                    <p>위치: 서울시 마포구</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex justify-content-center flex-column align-items-center">
-                                <img src="./img/room/hyun/room1-main_img.avif" alt="방 8" class="d-block w-100 rounded-img">
-                                <div class="info text-center mt-3">
-                                    <h2>방 8</h2>
-                                    <p>가격: 8억원</p>
-                                    <p>위치: 서울시 강동구</p>
-                                </div>
-                            </div>
+                <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <img src="/Project.GongBang/img/room/hyun/room1-main_img.avif" alt="방 2" data-toggle="modal" data-target="#roomModal" data-room="2">
+                        <div class="room-text">
+                            <h2>방 4</h2>
+                            <p>가격: 4억원</p>
+                            <p>위치: 서울시 종로구</p>
                         </div>
                     </div>
                 </div>
+                <!-- 추가 방 목록... -->
             </div>
-            <a class="carousel-control-prev" href="#propertyCarousel" role="button" data-slide="prev" style="left: -60px;">
+            <a class="carousel-control-prev" href="#propertyCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#propertyCarousel" role="button" data-slide="next" style="right: -60px;">
+            <a class="carousel-control-next" href="#propertyCarousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -122,10 +75,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img src="./img/room/hyun/room1-main_img.avif" alt="방 이미지" class="img-fluid">
-                    <img src="./img/room/hyun/room1-main_img.avif" alt="방 이미지" class="img-fluid">
-                    <img src="./img/room/hyun/room1-main_img.avif" alt="방 이미지" class="img-fluid">
-                    <p>추가적인 방 정보를 여기에 표시합니다.</p>
+                    <div id="modalImages" class="d-flex flex-wrap"></div>
+                    <p id="modalDescription">추가적인 방 정보를 여기에 표시합니다.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
@@ -137,5 +88,45 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const roomData = {
+            1: {
+                images: [
+                    '/Project.GongBang/img/room/hyun/room1-main_img.avif',
+                    '/Project.GongBang/img/room/hyun/room1-main_img.avif',
+                    '/Project.GongBang/img/room/hyun/room1-main_img.avif'
+                ],
+                description: '방 3의 상세 정보입니다.'
+            },
+            2: {
+                images: [
+                    '/Project.GongBang/img/room/hyun/room2-main_img.avif',
+                    '/Project.GongBang/img/room/hyun/room2-img2.avif',
+                    '/Project.GongBang/img/room/hyun/room2-img3.avif'
+                ],
+                description: '방 4의 상세 정보입니다.'
+            }
+        };
+
+        $('#roomModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // 버튼을 누른 요소
+            var room = button.data('room'); // data-room 속성에서 정보 추출
+
+            var modal = $(this);
+            var modalImages = modal.find('#modalImages');
+            var modalDescription = modal.find('#modalDescription');
+
+            var data = roomData[room];
+
+            modalImages.empty(); // 이전 이미지 제거
+
+            data.images.forEach(function(src) {
+                var img = $('<img>').attr('src', src).addClass('img-fluid m-1').css('width', '99%');
+                modalImages.append(img);
+            });
+
+            modalDescription.text(data.description);
+        });
+    </script>
 </body>
 </html>
