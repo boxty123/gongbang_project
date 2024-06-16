@@ -2,13 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5;
+    background: url('/Project.GongBang/img/background_haul.jpg_large') no-repeat center center fixed;
+    background-size: cover;
 }
 .container {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.8); /* Make the background slightly transparent */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .container h1 {
@@ -59,4 +60,7 @@ body {
 #first_box_img {
     text-align: center;
     margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* 배경을 약간 투명하게 설정 */
+    padding: 10px;
+    border-radius: 10px;
 }
