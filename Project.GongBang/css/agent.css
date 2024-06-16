@@ -15,7 +15,7 @@ body {
     width: 80%;
     max-width: 1200px;
     padding: 20px;
-    margin-top: 80px; /* Adjust the margin-top to avoid overlap with navbar */
+    margin-top: 80px; 
 }
 
 h1 {
@@ -112,4 +112,9 @@ h1 {
     position: fixed;
     top: 0;
     z-index: 1000;
+}
+
+/* Add rounded corners to images */
+.rounded-img {
+    border-radius: 10px;
 }
