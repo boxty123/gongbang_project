@@ -118,3 +118,8 @@ h1 {
 .rounded-img {
     border-radius: 10px;
 }
+
+.img-fluid{
+    
+    padding: 10px;
+}
